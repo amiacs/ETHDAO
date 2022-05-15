@@ -4,10 +4,10 @@ import sdk from "./1-initialize-sdk.js";
   try {
     const voteContractAddress = await sdk.deployer.deployVote({
       // Give your governance contract a name.
-      name: "My amazing DAO",
+      name: "ETH DAO Governance Contract",
 
       // This is the location of our governance token, our ERC-20 contract!
-      voting_token_address: "INSERT_TOKEN_ADDRESS",
+      voting_token_address: "0xFf6d8Cf4961a1Ec7724eC95aE27505381545aba3",
 
       // These parameters are specified in number of blocks. 
       // Assuming block time of around 13.14 seconds (for Ethereum)
@@ -18,7 +18,8 @@ import sdk from "./1-initialize-sdk.js";
 
       // How long do members have to vote on a proposal when it's created?
       // we will set it to 1 day = 6570 blocks
-      voting_period_in_blocks: 6570,
+      //voting_period_in_blocks: 6570,
+      voting_period_in_blocks: 22,  // 5mins
 
       // The minimum % of the total supply that need to vote for
       // the proposal to be valid after the time for the proposal has ended.

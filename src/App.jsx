@@ -15,7 +15,7 @@ const App = () => {
   // Initialize our token contract
   const token = useToken("0xFf6d8Cf4961a1Ec7724eC95aE27505381545aba3")
   // Initialize our vote contract
-  const vote = useVote("INSERT_VOTE_ADDRESS");
+  const vote = useVote("0xE0e78A068dd66cB58385B2e021A2B16607d309DC");
 
   // State variable for us to know if user has our NFT.
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);

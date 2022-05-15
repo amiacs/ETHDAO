@@ -2,15 +2,15 @@ import sdk from "./1-initialize-sdk.js";
 import { ethers } from "ethers";
 
 // This is our governance contract.
-const vote = sdk.getVote("INSERT_VOTE_ADDRESS");
+const vote = sdk.getVote("0xE0e78A068dd66cB58385B2e021A2B16607d309DC");
 
 // This is our ERC-20 contract.
-const token = sdk.getToken("INSERT_TOKEN_ADDRESS");
+const token = sdk.getToken("0xFf6d8Cf4961a1Ec7724eC95aE27505381545aba3");
 
 (async () => {
   try {
-    // Create proposal to mint 420,000 new token to the treasury.
-    const amount = 420_000;
+    // Create proposal to mint 500,000 new token to the treasury.
+    const amount = 500_000;
     const description = "Should the DAO mint an additional " + amount + " tokens into the treasury?";
     const executions = [
       {
@@ -42,8 +42,8 @@ const token = sdk.getToken("INSERT_TOKEN_ADDRESS");
   }
 
   try {
-    // Create proposal to transfer ourselves 6,900 tokens for being awesome.
-    const amount = 6_900;
+    // Create proposal to transfer ourselves 10,000 tokens for being awesome.
+    const amount = 10_000;
     const description = "Should the DAO transfer " + amount + " tokens from the treasury to " +
       process.env.WALLET_ADDRESS + " for being awesome?";
     const executions = [
