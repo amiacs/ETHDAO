@@ -11,9 +11,9 @@ const App = () => {
   console.log("👋 Address:", address);
 
   // Initialize our editionDrop contract
-  const editionDrop = useEditionDrop("INSERT_EDITION_DROP_ADDRESS");
+  const editionDrop = useEditionDrop("0xb80484252190542704F2C742fb3Df1ee57Ae49Cd");
   // Initialize our token contract
-  const token = useToken("INSERT_TOKEN_ADDRESS")
+  const token = useToken("0xFf6d8Cf4961a1Ec7724eC95aE27505381545aba3")
   // Initialize our vote contract
   const vote = useVote("INSERT_VOTE_ADDRESS");
 
