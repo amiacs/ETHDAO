@@ -28,7 +28,7 @@ import sdk from "./1-initialize-sdk.js";
       // What's the minimum # of tokens a user needs to be allowed to create a proposal?
       // I set it to 0. Meaning no tokens are required for a user to be allowed to
       // create a proposal.
-      proposal_token_threshold: 0,
+      proposal_token_threshold: 1,
     });
 
     console.log(
