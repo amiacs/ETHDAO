@@ -17,6 +17,7 @@ if (!process.env.ALCHEMY_API_URL || process.env.ALCHEMY_API_URL === "") {
 if (!process.env.WALLET_ADDRESS || process.env.WALLET_ADDRESS === "") {
   console.log("🛑 Wallet Address not found.");
 }
+console.log("Wallet address: " + process.env.WALLET_ADDRESS );
 
 const sdk = new ThirdwebSDK(
   new ethers.Wallet(
