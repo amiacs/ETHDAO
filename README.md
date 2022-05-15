@@ -1,3 +1,6 @@
+#ETHDAO
+ETH Zurich Workshop
+
 Welcome 👋
 To get started with this project, clone this repo and follow these commands:
 
